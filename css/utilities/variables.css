@@ -1,8 +1,17 @@
 :root {
     --primary: hsl(216, 100%, 50%);
+    --primary-hover: hsl(216, 100%, 35%);
     --secondary: hsl(346, 84%, 61%);
+    --secondary-hover: hsl(346, 84%, 50%);
+
+    --success: hsl(153, 53%, 53%);
+    --success-hover: hsl(153, 53%, 40%);
+    --danger: hsl(0, 98%, 49%);
+    --danger-hover: hsl(0, 98%, 40%);
+
     --white: hsl(0, 0%, 100%);
     --white-grey: hsl(0, 0%, 98%); 
+
     --grey-lightest: hsl(0, 0%, 48%);
     --grey-lighter: hsl(0, 0%, 29%);
     --grey-dark: hsl(0, 0%, 21%);
