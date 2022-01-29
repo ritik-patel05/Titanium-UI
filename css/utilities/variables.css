@@ -1,0 +1,38 @@
+:root {
+    --primary: hsl(216, 100%, 50%);
+    --secondary: hsl(346, 84%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --white-grey: hsl(0, 0%, 98%); 
+    --grey-lightest: hsl(0, 0%, 48%);
+    --grey-lighter: hsl(0, 0%, 29%);
+    --grey-dark: hsl(0, 0%, 21%);
+
+    --radius-small: 2px;
+    --radius: 4px;
+    --radius-large: 6px;
+    --radius-rounded: 9999px;
+
+    --weight-light: 300;
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    --size-16: 2.75rem;
+    --size-15: 2.5rem;
+    --size-14: 2.25rem;
+    --size-13: 2rem;
+    --size-12: 1.75rem;
+    --size-11: 1.5rem;
+    --size-10: 1.25rem;
+    --size-9: 1rem;
+    --size-8: 0.875rem;
+    --size-7: 0.75rem;
+    --size-6: 0.625rem;
+    --size-5: 0.5rem;
+    --size-4: 0.375rem;
+    --size-3: 0.25rem;
+    --size-2: 0.125rem;
+    --size-1: 1px;
+    --size-0: 0;
+}
