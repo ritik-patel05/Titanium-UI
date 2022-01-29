@@ -1,0 +1,163 @@
+.btn {
+    cursor: pointer;
+    line-height: 1.5;
+    height: var(--size-15);
+    
+    /* inline so that, it remains in line. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    padding: var(--size-4) var(--size-9);
+
+    border: var(--size-1) solid transparent;
+    border-radius: var(--radius-large);
+    border-color: var(--grey-lightest);
+
+    background-color: var(--white);
+    color: var(--grey-lighter);
+    
+    /* if a link is given button class, remove default line */
+    text-decoration: none;
+
+    /* text doesn't wrap onto next line */
+    white-space: nowrap;
+
+    /* default button size */
+    font-size: var(--size-9);
+}
+
+.btn:hover {
+    border-color: var(--grey-dark);
+}
+
+/* ---- Sizes ---- */
+
+/* small */
+.is-sm {
+    font-size: var(--size-8);
+}
+
+/* medium */
+.is-med {
+    font-size: var(--size-10);
+}
+
+/* large */
+.is-lg {
+    font-size: var(--size-11);
+}
+
+/* ---- Full screen display ---- */
+
+/* takes complete width of parent */
+.btn.is-wholewidth {
+    width: 100%;
+}
+
+/* ---- Colors ---- */
+
+.btn.is-primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: transparent;
+}
+.btn.is-primary:hover {
+    color: var(--white);
+    background-color: var(--primary-hover);
+    border-color: transparent;
+}
+
+
+.btn.is-secondary {
+    color: var(--white);
+    background-color: var(--secondary);
+    border-color: transparent;
+}
+.btn.is-secondary:hover {
+    color: var(--white);
+    background-color: var(--secondary-hover);
+    border-color: transparent;
+}
+
+.btn.is-danger {
+    color: var(--white);
+    background-color: var(--danger);
+    border-color: transparent;
+}
+.btn.is-danger:hover {
+    color: var(--white);
+    background-color: var(--danger-hover);
+    border-color: transparent;
+}
+
+.btn.is-success {
+    color: var(--white);
+    background-color: var(--success);
+    border-color: transparent;
+}
+.btn.is-success:hover {
+    color: var(--white);
+    background-color: var(--success-hover);
+    border-color: transparent;
+}
+
+/* ---- Outlined ---- */
+
+.btn.is-primary.is-outlined {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+.btn.is-primary.is-outlined:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn.is-secondary.is-outlined {
+    color: var(--secondary);
+    background-color: transparent;
+    border-color: var(--secondary);
+}
+.btn.is-secondary.is-outlined:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn.is-danger.is-outlined {
+    color: var(--danger);
+    background-color: transparent;
+    border-color: var(--danger);
+}
+.btn.is-danger.is-outlined:hover {
+    color: var(--white);
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.btn.is-success.is-outlined {
+    color: var(--success);
+    background-color: transparent;
+    border-color: var(--success);
+}
+.btn.is-success.is-outlined:hover {
+    color: var(--white);
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+/* ---- Rounded ---- */
+.btn.is-rounded {
+    border-radius: var(--radius-rounded);
+    padding-left: var(--size-10);
+    padding-right: var(--size-10);
+}
+
+/* ---- Disabled ---- */
+.btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
