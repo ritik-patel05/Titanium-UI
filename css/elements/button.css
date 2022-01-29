@@ -11,7 +11,7 @@
 
     padding: var(--size-4) var(--size-9);
 
-    border: var(--size-1) solid transparent;
+    border: var(--size-1) solid;
     border-radius: var(--radius-large);
     border-color: var(--grey-lightest);
 
@@ -52,7 +52,7 @@
 /* ---- Full screen display ---- */
 
 /* takes complete width of parent */
-.btn.is-wholewidth {
+.btn.is-vw {
     width: 100%;
 }
 
