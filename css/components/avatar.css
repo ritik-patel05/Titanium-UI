@@ -1,0 +1,62 @@
+.avatar {
+    position: relative;
+    overflow: hidden;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    /* Default avatar style */
+    width: var(--size-12);
+    height: var(--size-12);
+    font-size: var(--size-11);
+
+    border-radius: var(--radius-rounded);
+    padding: var(--size-4) var(--size-4);
+
+    color: var(--white);
+    background-color: var(--grey-dark);
+}
+
+/* ---- Sizes ---- */
+
+/* small */
+.avatar.is-sm {
+    width: var(--size-10);
+    height: var(--size-10);
+    font-size: var(--size-10);
+}
+
+/* medium */
+.avatar.is-med {
+    width: var(--size-14);
+    height: var(--size-14);
+    font-size: var(--size-12);
+}
+
+/* large */
+.avatar.is-lg {
+    width: var(--size-16);
+    height: var(--size-16);
+    font-size: var(--size-13);
+}
+
+/* ---- Image avatars ---- */
+.avatar.is-img {
+    object-fit: cover;
+    color: transparent;
+
+    /* Some large value, so that no text is shown */
+    text-indent: 10000px;
+}
+
+/* ---- Square avatars ---- */
+.avatar.is-square {
+    border-radius: 0;
+}
+
+/* ---- Rounded avatars ---- */
+.avatar.is-rounded {
+    border-radius: var(--radius-large);
+}
