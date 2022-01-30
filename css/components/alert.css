@@ -1,0 +1,54 @@
+.alert {
+    display: flex;
+    align-items: center;
+
+    /* default style */
+    border-radius: var(--radius-rounded);
+    padding: var(--size-4) var(--size-9);
+    font-size: var(--size-10);
+}
+
+/* ---- Font sizes ---- */
+
+/* small */
+.alert.is-sm {
+    font-size: var(--size-9);
+}
+
+/* medium */
+.alert.is-med {
+    font-size: var(--size-11);
+}
+
+/* large */
+.alert.is-lg {
+    font-size: var(--size-12);
+}
+
+/* ---- Shapes ---- */
+
+/* square */
+.alert.is-square {
+    border-radius: 0;
+}
+
+/* rounded */
+.alert.is-rounded {
+    border-radius: var(--radius-large);
+}
+
+/* ---- Colors ---- */
+
+/* danger */
+.alert.is-danger {
+    background-color: var(--danger);
+    color: white;
+}
+
+/* success */
+.alert.is-success {
+    background-color: var(--success);
+    color: white;
+}
+
+/* TODO: remove padding of alert, if I find a child element with .icon class */
