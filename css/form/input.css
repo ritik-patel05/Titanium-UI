@@ -32,7 +32,7 @@
     2: parent who has child => small input with icon on left
     3: parent who has child => small input with icon on right 
 
-    purpose of 2,3 => resize icon as size changes.
+    purpose of 2,3 => overwrite icon class as size changes to resize size.
 */
 .input.is-sm, 
 .have-icon-left .input.is-sm ~ .icon, 
@@ -114,6 +114,17 @@
 .input:hover {
     border-color: var(--grey-dark);
 }
+
+/* Remove grey dark color on hover for success/danger */
+.is-success.input:hover {
+    border-color: var(--success);
+}
+
+.is-danger.input:hover {
+    border-color: var(--danger);
+}
+
+/* Default active, focus style */
 .input:active,
 .input:focus {
     border-color: var(--primary);
@@ -125,10 +136,20 @@
     color: var(--grey-dark);    
 }
 
-.is-success.input:hover {
+/* Overwrite default active, focus style for success/danger 
+    Not working as of now
+*/
+.is-success.input:active,
+.is-success.input:focus {
     border-color: var(--success-hover);
 }
 
-.is-danger.input:hover {
+.is-danger.input:active,
+.is-danger.input:focus {
     border-color: var(--danger-hover);
 }
+
+/* TODO:
+1.  active, focus states not working on danger and success. (showing primary color on default)
+    but should be darker green and darker red.
+ */
