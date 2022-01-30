@@ -1,0 +1,116 @@
+.input {
+    cursor: pointer;
+    line-height: 1.5;
+    height: var(--size-15);
+    width: 100%;
+    
+    /* inline so that, it remains in line. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: border-box;
+
+    padding: var(--size-4) var(--size-9);
+
+    border: var(--size-1) solid;
+    border-radius: var(--radius-large);
+    border-color: var(--white-light);
+
+    background-color: var(--white);
+    color: var(--grey-lighter);
+
+    /* default button size */
+    font-size: var(--size-9);
+}
+
+/* ---- States ---- */
+.input:hover {
+    border-color: var(--grey-dark);
+}
+.input:active,
+.input:focus {
+    border-color: var(--primary);
+}
+
+/* ---- Sizes ---- */
+
+/* small 
+    
+    1: small input 
+    2: parent who has child => small input with icon on left
+    3: parent who has child => small input with icon on right 
+
+    purpose of 2,3 => resize icon as size changes.
+*/
+.input.is-sm, 
+.have-icon-left .input.is-sm ~ .icon, 
+.have-icon-right .input.is-sm ~ .icon {
+    font-size: var(--size-7);
+    border-radius: var(--radius-small);
+}
+
+/* medium */
+.input.is-md,
+.have-icon-left .input.is-md ~ .icon, 
+.have-icon-right .input.is-md ~ .icon {
+    font-size: var(--size-10);
+}
+
+/* large */
+.input.is-lg,
+.have-icon-left .input.is-lg ~ .icon, 
+.have-icon-right .input.is-lg ~ .icon {
+    font-size: var(--size-11);
+}
+
+/* ---- Styles ---- */
+
+/* rounded */
+.input.is-rounded {
+    border-radius: var(--radius-rounded);
+
+    /* Have more circular look on either side. */
+    padding-left: var(--size-10);
+    padding-right: var(--size-10);
+}
+
+/* ---- Icons ---- */
+
+/* common styles for absolute placed icons at the end */
+.have-icon-left .icon,
+.have-icon-right .icon {
+    position: absolute;
+    top: 0;
+
+    color: var(--white-light);
+
+    width: var(--size-15);
+    height: var(--size-15);
+}
+
+/* move icon to leftmost end */
+.have-icon-left .icon.is-left {
+    left: 0;
+}
+
+/* move icon to rightmost end */
+.have-icon-right .icon.is-right {
+    right: 0;
+}
+
+/* give space on left side to icon */
+.have-icon-left .input {
+    padding-left: var(--size-15);
+}
+
+/* give space on right side to icon */
+.have-icon-right .input {
+    padding-right: var(--size-15);
+}
+
+/* Make .icon darker on state change of input */
+.input:active ~ .icon,
+.input:focus ~ .icon {
+    color: var(--grey-dark);    
+}
