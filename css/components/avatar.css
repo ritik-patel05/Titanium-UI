@@ -46,9 +46,6 @@
 .avatar.is-img {
     object-fit: cover;
     color: transparent;
-
-    /* Some large value, so that no text is shown */
-    text-indent: 10000px;
 }
 
 /* ---- Square avatars ---- */
