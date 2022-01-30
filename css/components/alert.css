@@ -1,6 +1,7 @@
 .alert {
     display: flex;
     align-items: center;
+    position: relative;
 
     /* default */
     border-radius: var(--radius-rounded);
