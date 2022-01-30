@@ -18,11 +18,13 @@
 /* medium */
 .alert.is-med {
     font-size: var(--size-11);
+    padding: var(--size-5) var(--size-10);
 }
 
 /* large */
 .alert.is-lg {
     font-size: var(--size-12);
+    padding: var(--size-6) var(--size-11);
 }
 
 /* ---- Shapes ---- */
