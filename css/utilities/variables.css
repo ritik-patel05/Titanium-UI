@@ -11,6 +11,7 @@
 
     --white: hsl(0, 0%, 100%);
     --white-grey: hsl(0, 0%, 98%); 
+    --white-light: hsl(0, 0%, 85%);
 
     --grey-lightest: hsl(0, 0%, 48%);
     --grey-lighter: hsl(0, 0%, 29%);
