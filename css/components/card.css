@@ -1,0 +1,145 @@
+.card, 
+.card .has-text-overlay,
+.card .has-badge-overlay {
+    position: relative;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+}
+
+/* ---- Types Of Cards: vertical and horizontal ---- */
+
+/* vertical */
+.card.is-vertical {
+    flex-direction: column; 
+    justify-content: center;
+    max-width: 345px;
+}
+
+/* horizontal */
+.card.is-horizontal {
+    max-height: 300px;
+    max-width: 540px;
+}
+
+/* ---- Image Section ---- */
+
+/* Image container */
+.card .has-img {
+    align-self: center;
+}
+
+.card.is-vertical .has-img {
+    max-width: 100%;
+}
+
+.card.is-horizontal .has-img {
+    max-width: 140px;
+}
+
+/* Image */
+.card .is-img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+/* ---- Container (Card Content + Card Actions) ---- */
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---- Card Content (Title + description) ---- */
+.card .card-content {
+    padding: var(--size-9);
+    padding-bottom: var(--size-5);
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+/* card title */
+.card-content .card-title {
+    line-height: 1;
+    margin-bottom: var(--size-4);
+    font-size: var(--size-11);
+    color: var(--grey-dark);
+    font-weight: 400;
+}
+
+/* card description */
+.card-content .card-desc {
+    line-height: 1.5;
+    color: var(--grey-lighter);
+    font-weight: 400;
+}
+
+/* ---- Card Action Buttons Container ---- */
+.card .card-actions {
+    display: flex;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    padding: var(--size-9);
+    max-height: 150px;
+}
+
+/* Has Actions on left and right container */
+.card-actions .has-actions-right,
+.card-actions .has-actions-left {
+    display: flex;
+    align-items: center;
+}
+
+/* left action container */
+.card-actions .has-actions-left {
+    margin-right: auto;
+}
+
+/* right action container */
+.card-actions .has-actions-right {
+    margin-left: auto;
+}
+
+/* Action */
+.has-actions-left .is-action,
+.has-actions-right .is-action {
+    margin-right: var(--size-5);
+}
+
+/* ---- Overlay (Text And Badge) ---- */
+
+/* Text overlay */
+.has-text-overlay .is-text-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.has-text-overlay .is-text-overlay {
+    padding: var(--size-5);
+}
+
+.is-text-overlay .card-title {
+    color: var(--white);
+}
+
+.is-text-overlay .card-desc {
+    color: var(--white);
+}
+
+/* badge overlay */
+.has-badge-overlay .is-badge-overlay {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
