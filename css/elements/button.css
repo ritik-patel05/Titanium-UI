@@ -161,3 +161,41 @@
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+/* ---- Inverted Buttons ---- */
+
+/* Text color becomes background color, and
+    vice-versa
+*/
+
+.btn.is-primary.is-inverted {
+    color: var(--primary);
+    background-color: var(--white);
+}
+.btn.is-primary.is-inverted:hover {
+    background-color: var(--grey-lighter);
+}
+
+.btn.is-secondary.is-inverted {
+    color: var(--secondary);
+    background-color: var(--white);
+}
+.btn.is-secondary.is-inverted:hover {
+    background-color: var(--grey-lighter);
+}
+
+.btn.is-danger.is-inverted {
+    color: var(--danger);
+    background-color: var(--white);
+}
+.btn.is-danger.is-inverted:hover {
+    background-color: var(--grey-lighter);
+}
+
+.btn.is-success.is-inverted {
+    color: var(--success);
+    background-color: var(--white);
+}
+.btn.is-success.is-inverted:hover {
+    background-color: var(--grey-lighter);
+}
