@@ -88,3 +88,36 @@ textarea {
 iframe {
     border: 0;
 }
+
+/* Span */
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* Font Awesome Setup
+    https://fontawesome.com/v5.15/how-to-use/on-the-web/referencing-icons/basic-use
+*/
+.fa, 
+.fab, 
+.fad, 
+.fal, 
+.far, 
+.fas {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+}
+
+.fa, 
+.far, 
+.fas {
+    font-family: "Font Awesome 5 Free";
+}

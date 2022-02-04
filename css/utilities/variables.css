@@ -28,6 +28,11 @@
     --weight-semibold: 600;
     --weight-bold: 700;
 
+    --default-font: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    --font-primary: var(--default-font);
+    --font-secondary: var(--default-font);
+
     --size-16: 2.75rem;
     --size-15: 2.5rem;
     --size-14: 2.25rem;
