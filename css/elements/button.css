@@ -173,7 +173,7 @@
     background-color: var(--white);
 }
 .btn.is-primary.is-inverted:hover {
-    background-color: var(--grey-lighter);
+    background-color: var(--white-grey);
 }
 
 .btn.is-secondary.is-inverted {
@@ -181,7 +181,7 @@
     background-color: var(--white);
 }
 .btn.is-secondary.is-inverted:hover {
-    background-color: var(--grey-lighter);
+    background-color: var(--white-grey);
 }
 
 .btn.is-danger.is-inverted {
@@ -189,7 +189,7 @@
     background-color: var(--white);
 }
 .btn.is-danger.is-inverted:hover {
-    background-color: var(--grey-lighter);
+    background-color: var(--white-grey);
 }
 
 .btn.is-success.is-inverted {
@@ -197,5 +197,5 @@
     background-color: var(--white);
 }
 .btn.is-success.is-inverted:hover {
-    background-color: var(--grey-lighter);
+    background-color: var(--white-grey);
 }
