@@ -1,0 +1,20 @@
+/* To make image responsive */
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img.is-square,
+.img.is-rounded,
+.img.is-corner {
+  width: 200px;
+  height: 200px;
+}
+
+.img.is-rounded {
+  border-radius: var(--radius-rounded);
+}
+
+.img.is-corner {
+  border-radius: var(--radius-large);
+}
