@@ -2,8 +2,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: var(--size-11);
-    height: var(--size-11);
+
+    font-size: var(--size-12);
+    /* so that they change as we change element's font size */
+    width: 1em;
+    height: 1em;
+
+    color: var(--grey-lighter);
 }
 
 .icon.is-md {
