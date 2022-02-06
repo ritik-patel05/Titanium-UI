@@ -15,8 +15,8 @@
     --white-lighter: hsl(0, 0%, 70%);
 
     --grey-lightest: hsl(0, 0%, 48%);
-    --grey-lighter: hsl(0, 0%, 29%);
-    --grey-dark: hsl(0, 0%, 21%);
+    --grey-lighter: #4a4a4a;
+    --grey-dark: #363636;
 
     --radius-small: 2px;
     --radius: 4px;
