@@ -1,0 +1,62 @@
+.select {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+}
+
+.select select {
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+
+    /* For responsive sizes of slect */
+    font-size: 1em;
+
+    /* Remove default dropdown icon */
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+.select select:not([multiple]) {
+    padding-right: 2.5em;
+}
+
+/* ---- Create Dropdown Icon ---- */
+
+.select:not(.is-multiple)::after {
+    
+    border: var(--size-3) solid transparent;
+    border-radius: var(--radius-small);
+    border-right: 0;
+    border-top: 0;
+    
+    content: " ";
+    display: block;
+    height: 0.625em;
+    width: 0.625em;
+    margin-top: -0.4375em;
+
+    position: absolute;
+    top: 50%;
+
+    transform: rotate(-45deg);
+    transform-origin: center;
+
+    border-color: var(--primary);
+    right: 1.125em;
+    z-index: 4;
+}
+
+/* ---- For multiple select dropdown ---- */
+
+.select select[multiple] {
+    height: auto;
+    padding: 0;
+}
+
+.select select[multiple] option {
+    padding: var(--size-5) var(--size-9);
+}

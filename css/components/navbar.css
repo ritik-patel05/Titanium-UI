@@ -1,0 +1,125 @@
+.navbar {
+    position: relative;
+    background-color: var(--white);
+    min-height: 3.25rem;
+    z-index: 50;
+}
+
+.navbar-label {
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    min-height: 3.25rem;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.bd-navbar .navbar-start {
+    flex-grow: 1;
+}
+
+.bd-navbar-item {
+    transition-duration: 86ms;
+    transition-property: background-color,box-shadow,color;
+}
+
+.navbar-item {
+    position: relative;
+    line-height: 1.5;
+    padding: var(--size-5) var(--size-7);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.bd-navbar .navbar-item, 
+.bd-navbar .navbar-link {
+    padding: 0.5em 0.75em;
+}
+
+a.navbar-item {
+    cursor: pointer;
+}
+
+a.navbar-item.is-active, 
+a.navbar-item:focus, 
+a.navbar-item:focus-within, 
+a.navbar-item:hover {
+    background-color: var(--white-grey);
+    color: var(--primary);
+}
+
+.bd-navbar-item.is-active, 
+.bd-navbar-item:hover {
+    border-radius: var(--radius-large);
+    color: var(--primary-hover) !important;
+}
+
+.bd-navbar-item.is-active {
+    background-color: transparent !important;
+    box-shadow: inset 0 0 0 2px var(--color-light) !important;
+}
+
+.bd-navbar-item > .icon {
+    margin-left: -0.25em;
+    margin-right: 0.25em;
+}
+
+@media screen and (min-width: 769px) {
+    .navbar {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .navbar-menu, 
+    .navbar-start,
+    .navbar-end {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .navbar-menu {
+        flex-grow: 1;
+    }
+
+    .navbar-start {
+        margin-right: auto;
+        justify-content: flex-start;
+    }
+
+    .navbar-end {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .navbar-item, 
+    .navbar-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-navbar {
+        padding: var(--size-9) var(--size-13);
+    }
+
+    .bd-navbar .navbar-menu {
+        flex-shrink: 1;
+    }
+
+    .bd-navbar .navbar-menu, 
+    .bd-navbar .navbar-start,
+    .bd-navbar .navbar-end {
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1216px) {
+    .bd-navbar {
+        padding: var(--size-13) calc(2 * var(--size-13));
+        font-size: var(--size-10);
+    }
+}
