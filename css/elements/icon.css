@@ -5,3 +5,13 @@
     width: var(--size-11);
     height: var(--size-11);
 }
+
+.icon.is-md {
+    height: var(--size-13);
+    width: var(--size-13);
+}
+
+.icon.is-lg {
+    height: 3rem;
+    width: 3rem;
+}

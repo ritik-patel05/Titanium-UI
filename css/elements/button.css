@@ -1,20 +1,10 @@
 .btn {
     cursor: pointer;
-    line-height: 1.5;
-    height: var(--size-15);
-    
-    /* inline so that, it remains in line. */
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-
-    padding: var(--size-4) var(--size-9);
 
     border: var(--size-1) solid;
     border-radius: var(--radius-large);
     border-color: var(--grey-lightest);
-
     background-color: var(--white);
     color: var(--grey-lighter);
     
@@ -23,9 +13,7 @@
 
     /* text doesn't wrap onto next line */
     white-space: nowrap;
-
-    /* default button size */
-    font-size: var(--size-9);
+    text-align: center;
 }
 
 .btn:hover {
