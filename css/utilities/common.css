@@ -1,0 +1,120 @@
+.button, 
+.input,
+.select select {
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+    
+    line-height: 1.5;
+    height: 2.5em;
+    
+    /* inline so that, it remains in line. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding: calc(0.5em - 1px) calc(0.75em - 1px);
+    box-shadow: none;
+
+    border-radius: 0.375em;
+    border-color: var(--white-light);
+
+    background-color: var(--white);
+    color: var(--grey-dark);
+}
+
+/* ---- Padding for Icons at the end ---- */
+
+.have-icon-left .input,
+.have-icon-left .select select {
+    padding-left: 2.5em;
+}
+
+.have-icon-right .input, 
+.have-icon-right .select select {
+    padding-right: 2.5em;
+}
+
+/* ---- Sizes Of Input/Select ---- */
+
+.input.is-sm,
+.select.is-sm {
+    font-size: var(--size-7);
+    border-radius: var(--radius-small);
+}
+
+.input.is-md,
+.select.is-md {
+    font-size: var(--size-10);
+}
+
+.input.is-lg,
+.select.is-lg {
+    font-size: var(--size-11);
+}
+
+/* ---- Size Of Icons based on input/select ---- */
+
+.have-icon-left .input.is-sm ~ .icon, 
+.have-icon-left .select.is-sm ~ .icon, 
+.have-icon-right .input.is-sm ~ .icon, 
+.have-icon-right .select.is-sm ~ .icon {
+    font-size: var(--size-7);
+}
+
+.have-icon-left .input.is-md ~ .icon, 
+.have-icon-left .select.is-md ~ .icon, 
+.have-icon-right .input.is-md ~ .icon, 
+.have-icon-right .select.is-md ~ .icon {
+    font-size: var(--size-10);
+}
+
+.have-icon-left .input.is-lg ~ .icon, 
+.have-icon-left .select.is-lg ~ .icon, 
+.have-icon-right .input.is-lg ~ .icon, 
+.have-icon-right .select.is-lg ~ .icon {
+    font-size: var(--size-11);
+}
+
+/* ---- Icons ---- */
+
+/* common styles for absolute placed icons at the end */
+.have-icon-left .icon, 
+.have-icon-right .icon {
+    position: absolute;
+    top: 0;
+
+    color: var(--white-light);
+
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* move icon to leftmost end */
+.have-icon-left .icon.is-left {
+    left: 0;
+}
+
+/* move icon to rightmost end */
+.have-icon-right .icon.is-right {
+    right: 0;
+}
+
+/* ---- Hover, Active, Focus ---- */
+
+.input:hover, 
+.select select:hover {
+    border-color: var(--white-lighter);
+}
+
+.input:active, .input:focus, 
+.select select:active, .select select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.125em rgb(72 95 199 / 25%);
+}
+
+.button:active, .button:focus, 
+.input:active, .input:focus,  
+.select select:active, .select select:focus {
+    outline: 0;
+}

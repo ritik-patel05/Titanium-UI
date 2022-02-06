@@ -11,14 +11,12 @@
     color: var(--grey-lighter);
 }
 
-.icon.is-sm {
-    font-size: var(--size-11);
-}
-
 .icon.is-md {
-    font-size: var(--size-13);
+    height: var(--size-13);
+    width: var(--size-13);
 }
 
 .icon.is-lg {
-    font-size: var(--size-14);
+    height: 3rem;
+    width: 3rem;
 }

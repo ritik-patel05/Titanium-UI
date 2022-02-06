@@ -1,0 +1,97 @@
+/* ---- Text Styles ---- */
+
+.is-capitalized {
+    text-transform: capitalize !important;
+}
+
+.is-lowercase {
+    text-transform: lowercase !important;
+}
+
+.is-uppercase {
+    text-transform: uppercase !important;
+}
+
+.is-italic {
+    font-style: italic !important;
+}
+
+/* ---- Font Weights ---- */
+
+.has-text-weight-light {
+    font-weight: var(--weight-light) !important;
+}
+
+.has-text-weight-normal {
+    font-weight: var(--weight-normal) !important;
+}
+
+.has-text-weight-medium {
+    font-weight: var(--weight-medium) !important;
+}
+
+.has-text-weight-semibold {
+    font-weight: var(--weight-semibold) !important;
+}
+
+.has-text-weight-bold {
+    font-weight: var(--weight-bold) !important;
+}
+
+/* ---- Font Family ---- */
+
+.is-font-primary {
+    font-family: var(--font-primary) !important;
+}
+
+.is-font-secondary {
+    font-family: var(--font-secondary) !important;
+}
+
+/* ---- Text Alignments ---- */
+
+.has-text-centered {
+    text-align: center;
+}
+
+.has-text-justified {
+    text-align: justify;
+}
+
+.has-text-left {
+    text-align: left;
+}
+
+.has-text-right {
+    text-align: right;
+}
+
+/* ---- Font Sizes ---- */
+
+.is-size-1 {
+    font-size: var(--size-7);
+}
+
+.is-size-2 {
+    font-size: var(--size-9);
+}
+
+.is-size-3 {
+    font-size: var(--size-10);
+}
+
+.is-size-4 {
+    font-size: var(--size-11);
+}
+
+.is-size-5 {
+    font-size: var(--size-13);
+}
+
+.is-size-6 {
+    font-size: var(--size-15);
+}
+
+.is-size-7 {
+    font-size: 3rem;
+}
