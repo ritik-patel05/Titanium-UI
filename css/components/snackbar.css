@@ -1,0 +1,71 @@
+.snackbar {
+    z-index: 100;
+    max-width: 400px;
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.5;
+    padding: var(--size-4) var(--size-9);  
+    
+    position: fixed;
+    bottom: var(--size-9);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--size-10);
+    
+    color: var(--white);
+    border-radius: var(--radius-large);
+    background-color: var(--grey-lighter);
+}
+
+.snackbar .icon {
+    color: var(--white);
+}
+
+/* ---- Left Icon ---- */
+
+.snackbar .icon.is-left {
+    margin-right: var(--size-7);
+    font-size: var(--size-10);
+}
+
+/* ---- Message ---- */
+
+.snackbar .is-msg {
+    font-weight: 500;
+    margin-right: var(--size-7);
+}
+
+/* ---- Right side buttons ---- */
+
+.snackbar .btn.is-right {
+    height: var(--size-12);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    flex-grow: 1;
+    margin-left: auto;
+}
+
+.snackbar .btn .icon {
+    font-size: var(--size-10);
+}
+
+/* ---- Colors ---- */
+
+.snackbar.is-success {
+    background-color: var(--success);
+}
+
+.snackbar.is-danger {
+    background-color: var(--danger);
+}
+
+.snackbar.is-primary {
+    background-color: var(--primary);
+}
+
+.snackbar.is-secondary {
+    background-color: var(--secondary);
+}

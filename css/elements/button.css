@@ -23,17 +23,17 @@
 /* ---- Sizes ---- */
 
 /* small */
-.is-sm {
+.btn.is-sm {
     font-size: var(--size-8);
 }
 
 /* medium */
-.is-med {
+.btn.is-med {
     font-size: var(--size-10);
 }
 
 /* large */
-.is-lg {
+.btn.is-lg {
     font-size: var(--size-11);
 }
 
