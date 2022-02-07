@@ -1,4 +1,4 @@
-.button, 
+.btn, 
 .input,
 .select select {
     cursor: pointer;
@@ -117,4 +117,28 @@
 .input:active, .input:focus,  
 .select select:active, .select select:focus {
     outline: 0;
+}
+
+/* ---- Dropdown icon ---- */
+.select:not(.is-multiple)::after,
+.navbar-link::after {
+    
+    border: var(--size-3) solid transparent;
+    border-radius: var(--radius-small);
+    border-right: 0;
+    border-top: 0;
+    border-color: var(--primary);
+    
+    content: " ";
+    display: block;
+    height: 0.625em;
+    width: 0.625em;
+    margin-top: -0.4375em;
+
+    position: absolute;
+    top: 50%;
+    right: 1.125em;
+
+    transform: rotate(-45deg);
+    transform-origin: center;
 }

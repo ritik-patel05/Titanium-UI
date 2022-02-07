@@ -1,0 +1,277 @@
+/* ---- Design: Using mobile first approach ---- */
+
+.navbar {
+    position: relative;
+    background-color: var(--white);
+    min-height: 3.25rem;
+    z-index: 100;
+}
+
+/* ---- Company Logo Img + Navbar burger Icon Container ---- */
+
+.navbar-brand {
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    min-height: 3.25rem;
+}
+
+/* ---- navbar menu: contains left and right part(navbar-start and navbar-end) ---- */
+
+.navbar-menu {
+    display: none;
+}
+
+/* ---- left part of navbar-menu ---- */
+
+.navbar-start {
+    flex-grow: 1;
+}
+
+/* ---- Navbar items and links ---- */
+
+.navbar-item,
+.navbar-link {
+    position: relative;
+    display: block;
+    line-height: 1.5;
+    padding: var(--size-5) var(--size-7);
+    color: var(--grey-lighter);
+}
+
+.navbar-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.navbar-link,
+a.navbar-item {
+    cursor: pointer;
+}
+
+.navbar-item > .icon {
+    margin-left: -0.25em;
+    margin-right: 0.25em;
+}
+
+.navbar-item.has-dropdown {
+    padding: 0;
+}
+
+.navbar-link {
+    padding-right: 2.5em;
+}
+
+.navbar-link::after {
+    margin-top: -0.375em;
+}
+
+/* ---- States of Navbar items, links ---- */
+
+.navbar-link:focus,
+a.navbar-item:focus, 
+.navbar-link:focus-within, 
+a.navbar-item:focus-within, 
+.navbar-link:hover,
+a.navbar-item:hover {
+    background-color: var(--white-grey);
+    color: var(--primary);
+}
+
+/* ---- navbar dropdown menu ---- */
+
+.navbar-dropdown {
+    padding-top: var(--size-5);
+    padding-bottom: var(--size-5);
+    font-size: var(--size-8);
+}
+
+.navbar-dropdown .navbar-item {
+    padding-left: var(--size-11);
+    padding-right: var(--size-11);
+}
+
+/* ---- navbar divider ---- */
+
+.navbar-divider {
+    border: none;
+    display: none;
+    background-color: var(--white-greyish);
+    height: var(--size-1);
+    margin: var(--size-5) 0;
+}
+
+/* ---- Navbar burger Icon ---- */
+
+.navbar-burger {
+    font-family: inherit;
+    font-size: 1em;
+    /* padding: 0;
+    margin: 0; */
+    color: currentColor;
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    width: 3.25rem;
+    position: relative;
+    margin-left: auto;
+    /* margin-right: 2rem; */
+}
+
+.navbar-burger:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.navbar-burger span {
+    display: block;
+    background-color: currentColor;
+    height: 1px;
+    width: var(--size-9);
+    position: absolute;
+    transform-origin: center;
+    left: calc(50% - 8px);
+    transition-timing-function: ease-out;
+}
+
+/* ---- Hamburger Icon by 3 spans ---- */
+
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 6px);
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 1px);
+}
+
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 4px);
+}
+
+/* ---- Close Icon, when hamburger is active ---- */
+
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+/* ---- Navbar Hamburger Menu Display ---- */
+
+@media screen and (max-width: 768px) {
+    .navbar-menu.is-active {
+        display: block;
+    }
+
+    .navbar-menu {
+        background-color: var(--white);
+        box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+        padding: var(--size-5) 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .navbar,
+    .navbar-menu, 
+    .navbar-start,
+    .navbar-end {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .navbar-menu {
+        flex-grow: 1;
+    }
+
+    .navbar-start {
+        margin-right: auto;
+        justify-content: flex-start;
+    }
+
+    .navbar-end {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .navbar-link,
+    .navbar-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-item.has-dropdown {
+        align-items: stretch;
+    }
+
+    .navbar-dropdown {
+        background-color: var(--white);
+        display: none;
+        font-size: var(--size-8);
+        min-width: 100%;
+        z-index: 70;
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%);
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        border-bottom-left-radius: var(--radius-large);
+        border-bottom-right-radius: var(--radius-large);
+        border-top: var(--size-1) solid var(--white-light);
+    }
+
+    .navbar-dropdown a.navbar-item {
+        padding-right: 3rem;
+    }
+
+    .navbar-dropdown .navbar-item {
+        white-space: nowrap;
+        padding: var(--size-4) var(--size-9);
+    }
+
+    .navbar-item.is-hoverable:focus .navbar-dropdown, 
+    .navbar-item.is-hoverable:focus-within .navbar-dropdown, 
+    .navbar-item.is-hoverable:hover .navbar-dropdown {
+        display: block;
+    }
+
+    .navbar-dropdown a.navbar-item:focus, 
+    .navbar-dropdown a.navbar-item:hover {
+        background-color: var(--white-greyish);
+        color: hsl(0, 0%, 4%);
+    }
+
+    .navbar-divider {
+        display: block;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: var(--size-9) var(--size-13);
+    }
+
+    .navbar .navbar-menu {
+        flex-shrink: 1;
+    }
+
+    .navbar .navbar-menu, 
+    .navbar .navbar-start,
+    .navbar .navbar-end {
+        align-items: center;
+    }
+}

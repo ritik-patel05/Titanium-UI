@@ -198,3 +198,13 @@
 .btn.is-success.is-inverted:hover {
     background-color: var(--white-grey);
 }
+
+/* ---- Group Of Buttons ---- */
+
+.buttons .btn {
+    margin-bottom: var(--size-5);
+}
+
+.buttons .btn:not(:last-child) {
+    margin-right: var(--size-5);
+}
