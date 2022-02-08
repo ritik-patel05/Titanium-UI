@@ -10,13 +10,14 @@
     --danger-hover: hsl(0, 98%, 40%);
 
     --white: hsl(0, 0%, 100%);
-    --white-grey: hsl(0, 0%, 98%); 
+    --white-grey: hsl(0, 0%, 98%);
+    --white-greyish: hsl(0, 0%, 96%); 
     --white-light: hsl(0, 0%, 85%);
     --white-lighter: hsl(0, 0%, 70%);
 
     --grey-lightest: hsl(0, 0%, 48%);
-    --grey-lighter: #4a4a4a;
-    --grey-dark: #363636;
+    --grey-lighter: hsl(0, 0%, 29%);
+    --grey-dark: hsl(0, 0%, 21%);
 
     --radius-small: 2px;
     --radius: 4px;
