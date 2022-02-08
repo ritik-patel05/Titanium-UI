@@ -1,18 +1,19 @@
 .snackbar {
     z-index: 100;
     max-width: 400px;
+    height: 3rem;
    
     display: flex;
     justify-content: flex-start;
     align-items: center;
     line-height: 1.5;
-    padding: var(--size-4) var(--size-9);  
+    padding: var(--size-8) var(--size-11);  
     
     position: fixed;
     bottom: var(--size-9);
     left: 50%;
     transform: translateX(-50%);
-    font-size: var(--size-10);
+    font-size: var(--size-9);
     
     color: var(--white);
     border-radius: var(--radius-large);
@@ -34,7 +35,7 @@
 
 .snackbar .is-msg {
     font-weight: 500;
-    margin-right: var(--size-7);
+    margin-right: 3rem;
 }
 
 /* ---- Right side buttons ---- */
