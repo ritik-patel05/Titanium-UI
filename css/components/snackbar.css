@@ -1,6 +1,7 @@
 .snackbar {
     z-index: 100;
-    max-width: 400px;
+    min-width: 288px;
+    max-width: 568px;
     height: 3rem;
    
     display: flex;
@@ -16,8 +17,8 @@
     font-size: var(--size-9);
     
     color: var(--white);
-    border-radius: var(--radius-large);
-    background-color: var(--grey-lighter);
+    border-radius: var(--radius-small);
+    background-color: #323232;
 }
 
 .snackbar .icon {
@@ -47,6 +48,7 @@
     border: 0;
     flex-grow: 1;
     margin-left: auto;
+    text-transform: uppercase;
 }
 
 .snackbar .btn .icon {
