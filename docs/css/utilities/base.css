@@ -2,3 +2,9 @@
 .content:not(:last-child) {
     margin-bottom: var(--size-11);
 }
+
+.nav.icon {
+    color: inherit;
+    font-size: inherit;
+    margin-right: var(--size-4);
+}
