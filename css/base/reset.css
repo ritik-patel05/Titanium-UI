@@ -12,6 +12,13 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--grey-lighter);
+    font-weight: 400;
+}
+
 /* Blocks */
 html,
 body,
@@ -93,6 +100,16 @@ iframe {
 span {
     font-style: inherit;
     font-weight: inherit;
+}
+
+/* Strong */
+strong {
+    color: var(--grey-dark);
+    font-weight: 700;
+}
+
+a strong {
+    color: currentColor;
 }
 
 /* Font Awesome Setup

@@ -35,7 +35,7 @@
     position: relative;
     display: block;
     line-height: 1.5;
-    padding: var(--size-5) var(--size-7);
+    padding: 0.5em 0.75em;
     color: var(--grey-lighter);
 }
 
@@ -161,6 +161,12 @@ a.navbar-item:hover {
     transform: translateY(-5px) rotate(-45deg);
 }
 
+.navbar .navbar-brand img {
+    height: 28px;
+    max-height: 2em;
+    width: 112px;
+}
+
 /* ---- Navbar Hamburger Menu Display ---- */
 
 @media screen and (max-width: 768px) {
@@ -179,6 +185,7 @@ a.navbar-item:hover {
     .navbar {
         display: flex;
         align-items: stretch;
+        min-height: 3.25rem;
     }
     
     .navbar,
@@ -191,6 +198,7 @@ a.navbar-item:hover {
 
     .navbar-menu {
         flex-grow: 1;
+        flex-shrink: 0;
     }
 
     .navbar-start {
@@ -265,7 +273,8 @@ a.navbar-item:hover {
         padding: var(--size-9) var(--size-13);
     }
 
-    .navbar .navbar-menu {
+    .navbar .navbar-menu,
+    .navbar .navbar-start {
         flex-shrink: 1;
     }
 
@@ -273,5 +282,18 @@ a.navbar-item:hover {
     .navbar .navbar-start,
     .navbar .navbar-end {
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+
+    .navbar {
+        font-size: 1.125rem;
+        padding: var(--size-13) 4rem;
+    }
+
+    .navbar .navbar-brand img {
+        height: 36px;
+        width: 144px;
     }
 }

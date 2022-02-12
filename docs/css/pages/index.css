@@ -1,0 +1,115 @@
+.intro-body {
+    display: grid;
+    gap: var(--index-gap);
+}
+
+.index-content,
+.footer {
+    font-size: var(--size-9);
+}
+
+.index-content .title {
+    color: var(--grey-lighter);
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+}
+
+.index-content strong {
+    font-weight: 600;
+}
+
+.intro-buttons .huge-button {
+    font-size: 1.125em;
+}
+
+.huge-button {
+    height: auto;
+    font-weight: 600;
+    padding: 0.75em 1.25em;
+}
+
+.intro-img {
+    justify-self: center;
+}
+
+.footer {
+    background-color: var(--white-grey);
+    padding: 3rem var(--size-11) 6rem;
+    margin: 0 auto;
+    width: auto;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        gap: var(--index-vertical); 
+        padding: var(--index-vertical);
+    }
+
+    .intro-buttons .btn {
+        margin-right: 0!important;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) { 
+    .intro {
+        align-items: center;
+        padding-bottom: var(--index-vertical);
+        padding-top: var(--index-vertical);
+    }
+
+    .intro-body {
+        align-items: center;
+        gap: 0;
+        grid-template-columns: var(--index-gap) 1fr calc(calc(var(--container-width) - var(--index-gap))/ 2) var(--index-gap) calc(calc(var(--container-width) - var(--index-gap))/ 2) 1fr var(--index-gap);
+    }
+
+    .intro-content {
+        grid-column: 3/span 1;
+    }
+
+    .intro-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--size-11);
+        margin-bottom: 0!important; 
+    }
+
+    .intro-buttons .btn {
+        margin: 0!important;
+        padding-right: 0!important;
+        padding-left: 0!important;;
+    }
+
+    .intro-img {
+        grid-column: 5/span 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .index-content,
+    .footer {
+        font-size: 1.125rem;
+    }   
+}
+
+@media screen and (min-width: 1216px) {
+    .index-content {
+        font-size: var(--size-10);
+        max-width: 24em;
+    }
+
+    .footer {
+        font-size: var(--size-10);
+    }
+}
+
+@media screen and (min-width: 1408px) {
+    .index-content,
+    .footer {
+        font-size: var(--size-11);
+    }
+}

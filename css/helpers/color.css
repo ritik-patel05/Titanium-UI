@@ -1,0 +1,31 @@
+.has-text-black {
+    color: var(--black) !important;
+}
+
+.has-text-dark {
+    color: var(--grey-dark) !important;
+}
+
+.has-text-white {
+    color: var(--white) !important;
+}
+
+.has-text-light {
+    color: var(--white-greyish) !important;
+}
+
+.has-background-black {
+    background-color: var(--black) !important;
+}
+
+.has-background-dark {
+    background-color: var(--grey-dark) !important;
+}
+
+.has-background-white {
+    background-color: var(--white) !important;
+}
+
+.has-background-light {
+    background-color: var(--white-greyish) !important;
+}

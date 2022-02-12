@@ -18,6 +18,7 @@
     --grey-lightest: hsl(0, 0%, 48%);
     --grey-lighter: hsl(0, 0%, 29%);
     --grey-dark: hsl(0, 0%, 21%);
+    --black: hsl(0, 0%, 4%);
 
     --radius-small: 2px;
     --radius: 4px;
@@ -52,4 +53,9 @@
     --size-2: 0.125rem;
     --size-1: 1px;
     --size-0: 0;
+
+    --tablet: 769px;
+    --desktop: 1024px;
+    --widescreen: 1216px;
+    --fullscreen: 1416px;
 }

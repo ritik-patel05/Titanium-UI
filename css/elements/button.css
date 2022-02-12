@@ -16,6 +16,10 @@
     text-align: center;
 }
 
+.btn strong {
+    color: inherit;
+}
+
 .btn:hover {
     border-color: var(--grey-dark);
 }
@@ -203,6 +207,10 @@
 
 .buttons .btn {
     margin-bottom: var(--size-5);
+}
+
+.buttons:last-child {
+    margin-bottom: - var(--size-5);
 }
 
 .buttons .btn:not(:last-child) {
