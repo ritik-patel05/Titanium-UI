@@ -11,6 +11,14 @@
     margin-bottom: 1em;
 }
 
+.control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
 .content ul {
     list-style: disc outside;
     margin-top: 1em;

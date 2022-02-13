@@ -4,9 +4,12 @@
     cursor: pointer;
     position: relative;
     vertical-align: top;
+
+    border: 1px solid transparent;
     
     line-height: 1.5;
     height: 2.5em;
+    font-size: var(--size-9);
     
     /* inline so that, it remains in line. */
     display: inline-flex;
