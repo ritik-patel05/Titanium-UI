@@ -10,6 +10,11 @@
     font-weight: inherit;
 }
 
+.title span,
+.subtitle span {
+    font-weight: inherit;
+}
+
 .subtitle {
     color: var(--grey-lighter);
     font-size: var(--size-10);

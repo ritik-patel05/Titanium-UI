@@ -1,7 +1,20 @@
 .title:not(:last-child),
+.subtitle:not(:last-child),
 .index-content:not(:last-child),
-.content:not(:last-child) {
+.content:not(:last-child),
+.snippet {
     margin-bottom: var(--size-11);
+}
+
+.content p:not(:last-child),
+.content ul:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.content ul {
+    list-style: disc outside;
+    margin-top: 1em;
+    margin-left: 2em;
 }
 
 .huge-button {
@@ -132,6 +145,37 @@
     font-size: .75em;
 }
 
+.snippet {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    position: relative;
+}
+
+.snippet-preview {
+    position: relative;
+    padding-top: var(--snippet-spacing);
+    padding-bottom: var(--snippet-spacing);
+}
+
+.anchor-title {
+    position: relative;
+}
+
+.anchor-title.title {
+    font-size: 1.5em;
+}
+
+.anchor-title:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.anchor-link {
+    position: absolute;
+    top: 0;
+    right: calc(100% + var(--size-9));
+}
+
 @media screen and (max-width: 768px) { 
     .docs {
         border-top: none;
@@ -185,6 +229,17 @@
 @media screen and (min-width: 1024px) { 
     .docs-main .hero-body {
         padding: 6rem;
+    }
+}
+
+@media screen and (max-width: 1215px) { 
+    .anchor-title {
+        padding-left: 1em;
+    }
+    
+    .anchor-link {
+        left: 0;
+        right: auto;
     }
 }
 

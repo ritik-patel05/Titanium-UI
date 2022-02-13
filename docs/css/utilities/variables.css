@@ -10,6 +10,8 @@
     --docs-outer: var(--size-11);
     --docs-inner: var(--size-11);
     --docs-side-padding: 1rem;
+
+    --snippet-spacing: 1.5rem;
 }
 
 @media screen and (min-width: 769px) { 

@@ -56,7 +56,11 @@ button, input, select, textarea {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--cyan);
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--grey-dark);
 }
 
 /* List */

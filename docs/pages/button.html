@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Finding a component library for your next frontend project? Titanium-UI is the right choice for your need. Built in classes for components, typography, and many more.">
+    <title>Titanium-UI</title>
+
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/utilities/variables.css">
+    <link rel="stylesheet" href="../css/utilities/base.css">
+    <link rel="stylesheet" href="../css/pages/index.css">
+
+    <script async src="https://kit.fontawesome.com/fbe81f2487.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../images/titanium dark fontsa.png" width="112" height="28">
+            </a>
+
+            <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="../index.html" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="../pages/get_started.html" class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="../pages/get_started.html" class="btn is-primary">
+                            <strong>Get Started</strong>
+                        </a>
+                        <a href="https://github.com/ritik-patel05/Titanium-UI" class="btn is-secondary">
+                            <div class="nav icon">
+                                <i class="fab fa-github" title="Github"></i>
+                            </div>
+                            <span>Contribute</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="docsToggle" class="docs-toggle">
+        <button id="docsNavButton" class="btn is-primary is-light huge-button is-sm" id="docsNavButton">Show
+            menu</button>
+    </header>
+
+    <div id="docs" class="docs">
+        <div id="docsNavOverlay" class="docs-overlay"></div>
+
+        <nav id="docsNav" class="docs-nav">
+            <div class="categories">
+                <a class="category" href="#">Avatar</a>
+                <a class="category" href="#">Alert</a>
+                <a class="category" href="#">Badge</a>
+                <a class="category is-current" href="./button.html">Button</a>
+                <a class="category" href="#">Card</a>
+                <a class="category" href="#">Image</a>
+                <a class="category" href="#">Input-Form</a>
+                <a class="category" href="#">Select-Form</a>
+                <a class="category" href="#">Typography</a>
+                <a class="category" href="#">Snackbar</a>
+                <a class="category" href="#">Navbar</a>
+            </div>
+        </nav>
+
+        <main class="docs-main">
+            <div class="container">
+                <section class="hero">
+                    <div class="hero-body">
+                        <h1 class="title">
+                            Button
+                        </h1>
+                        <div class="subtitle is-4">
+                            <p>Button in different sizes, colors, shapes and states.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="docs-body">
+                    <div class="docs-content">
+                        <div class="content">
+                            Buttons communicate to users actions thats they can take. They are used all over UI. They
+                            are
+                            essential part of a design.
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="button">
+                                        <button class="btn">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/0a2221cea2a469704eaacc1f54644b09.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="colors" class="title anchor-title">
+                            <span>Colors</span>
+                            <a href="#colors" class="anchor-link">#</a>
+                        </h2>
+                        <div class="content">
+                            The button is available in <strong>various colors</strong>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn is-success">Success</button>
+                                        <button class="btn is-danger">Danger</button>
+                                        <button class="btn is-primary">Primary</button>
+                                        <button class="btn is-secondary">Secondary</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/91f6892ba1539883280c177a5db1456c.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="sizes" class="title anchor-title">
+                            <span>Sizes</span>
+                            <a href="#sizes" class="anchor-link">#</a>
+                        </h2>
+                        <div class="content">
+                            <p>The button is available in <strong>4 different sizes:</strong></p>
+                            <ul>
+                                <li>Small</li>
+                                <li>Normal</li>
+                                <li>Medium</li>
+                                <li>Large</li>
+                            </ul>
+                            <p>The default size is the normal one.</p>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn is-sm">Small</button>
+                                        <button class="btn">Normal</button>
+                                        <button class="btn is-md">Medium</button>
+                                        <button class="btn is-lg">Large</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/d900371d9593f70999d13a7cd50e500f.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="styles" class="title anchor-title">
+                            <span>Styles</span>
+                            <a href="#styles" class="anchor-link">#</a>
+                        </h2>
+                        <h3 class="subtitle">
+                            Outlined
+                        </h3>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn is-outlined">Outlined</button>
+                                        <button class="btn is-primary is-outlined">Outlined</button>
+                                        <button class="btn is-secondary is-outlined">Outlined</button>
+                                        <button class="btn is-success is-outlined">Outlined</button>
+                                        <button class="btn is-danger is-outlined">Outlined</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/34c4a4394f2c0a87a51062bfbec43fdc.js"></script>
+                            </div>
+                        </div>
+                        <h3 class="subtitle">
+                            Inverted
+                        </h3>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn is-primary is-inverted">Inverted</button>
+                                        <button class="btn is-secondary is-inverted">Inverted</button>
+                                        <button class="btn is-success is-inverted">Inverted</button>
+                                        <button class="btn is-danger is-inverted">Inverted</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/99f3aea828f1d02853c81c61049d8627.js"></script>
+                            </div>
+                        </div>
+                        <h3 class="subtitle">
+                            Rounded
+                        </h3>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn is-rounded">Rounded</button>
+                                        <button class="btn is-primary is-rounded">Rounded</button>
+                                        <button class="btn is-secondary is-rounded">Rounded</button>
+                                        <button class="btn is-success is-rounded">Rounded</button>
+                                        <button class="btn is-danger is-rounded">Rounded</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/99b5e0ebcaf9e24bd621d06885fa459b.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="states" class="title anchor-title">
+                            <span>States</span>
+                            <a href="#states" class="anchor-link">#</a>
+                        </h2>
+                        <h3 class="subtitle">
+                            Disabled
+                        </h3>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="buttons">
+                                        <button class="btn" title="Disabled button" disabled>Disabled</button>
+                                        <button class="btn is-primary" title="Disabled button"
+                                            disabled>Disabled</button>
+                                        <button class="btn is-secondary" title="Disabled button"
+                                            disabled>Disabled</button>
+                                        <button class="btn is-success" title="Disabled button"
+                                            disabled>Disabled</button>
+                                        <button class="btn is-danger" title="Disabled button" disabled>Disabled</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/99b5e0ebcaf9e24bd621d06885fa459b.js"></script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p class="content"><strong>Made with ❤️ by Ritik</strong></p>
+        <div>
+            <a class="icon" href="https://twitter.com/ritik_patel05">
+                <i class="fab fa-twitter-square" title="Twitter"></i>
+            </a>
+            <a class="icon" href="https://github.com/ritik-patel05">
+                <i class="fab fa-github-square" title="Github"></i>
+            </a>
+            <a class="icon" href="https://www.linkedin.com/in/ritik-patel-5a61211a4/">
+                <i class="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

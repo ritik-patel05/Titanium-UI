@@ -4,9 +4,9 @@
 
     border: var(--size-1) solid;
     border-radius: var(--radius-large);
-    border-color: var(--grey-lightest);
+    border-color: var(--white-light);
     background-color: var(--white);
-    color: var(--grey-lighter);
+    color: var(--grey-dark);
     
     /* if a link is given button class, remove default line */
     text-decoration: none;
@@ -21,7 +21,7 @@
 }
 
 .btn:hover {
-    border-color: var(--grey-dark);
+    border-color: var(--white-lighter);
 }
 
 /* ---- Sizes ---- */
@@ -32,7 +32,7 @@
 }
 
 /* medium */
-.btn.is-med {
+.btn.is-md {
     font-size: var(--size-10);
 }
 
@@ -173,7 +173,7 @@
 }
 
 .btn.is-primary.is-inverted:hover {
-    background-color: var(--white-grey);
+    background-color: var(--white-greyish);
 }
 
 .btn.is-secondary.is-inverted {
@@ -182,7 +182,7 @@
 }
 
 .btn.is-secondary.is-inverted:hover {
-    background-color: var(--white-grey);
+    background-color: var(--white-greyish);
 }
 
 .btn.is-danger.is-inverted {
@@ -191,7 +191,7 @@
 }
 
 .btn.is-danger.is-inverted:hover {
-    background-color: var(--white-grey);
+    background-color: var(--white-greyish);
 }
 
 .btn.is-success.is-inverted {
@@ -200,10 +200,21 @@
 }
 
 .btn.is-success.is-inverted:hover {
-    background-color: var(--white-grey);
+    background-color: var(--white-greyish);
 }
 
 /* ---- Group Of Buttons ---- */
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.buttons:not(:last-child) {
+    margin-bottom: 1rem;
+}
 
 .buttons .btn {
     margin-bottom: var(--size-5);
