@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    width: auto;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) { 
+    .container {
+        max-width: var(--container-width-desktop);
+    }
+}
+
+@media screen and (min-width: 1216px) { 
+    .container {
+        max-width: var(--container-width-widescreen);
+    }
+}
+
+@media screen and (min-width: 1408px) { 
+    .container {
+        max-width: var(--container-width-fullscreen);
+    }
+}

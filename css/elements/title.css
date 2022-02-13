@@ -17,6 +17,11 @@
     line-height: 1.25;
 }
 
+.subtitle, 
+.title {
+    word-break: break-word;
+}
+
 .title.is-1 {
     font-size: 3rem;
 }

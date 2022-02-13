@@ -28,7 +28,7 @@
 
 /* small */
 .btn.is-sm {
-    font-size: var(--size-8);
+    font-size: var(--size-7);
 }
 
 /* medium */

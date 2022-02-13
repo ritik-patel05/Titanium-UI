@@ -1,5 +1,6 @@
 :root {
     --primary: hsl(216, 100%, 50%);
+    --primary-light: hsl(190, 77%, 88%);
     --primary-hover: hsl(216, 100%, 35%);
     --secondary: hsl(346, 84%, 61%);
     --secondary-hover: hsl(346, 84%, 50%);

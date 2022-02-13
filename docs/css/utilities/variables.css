@@ -5,18 +5,26 @@
     --container-width: calc(100vw - calc( 2 * var(--index-gap)));
     --container-width-desktop: calc(var(--desktop) - var(--container-offset)); 
     --container-width-widescreen: calc(var(--widescreen) - var(--container-offset)); 
-    --container-width-fullscreen: calc(var(--fullscreen) - var(--container-offset));    
+    --container-width-fullscreen: calc(var(--fullscreen) - var(--container-offset));
+    
+    --docs-outer: var(--size-11);
+    --docs-inner: var(--size-11);
+    --docs-side-padding: 1rem;
 }
 
 @media screen and (min-width: 769px) { 
     :root {
         --index-vertical: 3rem;
+        --docs-outer: 3rem;
+        --docs-inner: 3rem;
     }
 }   
 
 @media screen and (min-width: 1024px) { 
     :root {
         --container-width: var(--container-width-desktop);
+        --docs-outer: 6rem;
+        --docs-inner: 3rem;
     }
 }
 
