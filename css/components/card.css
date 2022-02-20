@@ -143,3 +143,8 @@
     top: 3%;
     left: 2%;
 }
+
+.card-actions .btn {
+    text-transform: uppercase;
+    font-weight: 500;
+}
