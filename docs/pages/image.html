@@ -94,10 +94,10 @@
             <div class="categories">
                 <a class="category" href="./avatar.html">Avatar</a>
                 <a class="category" href="./alert.html">Alert</a>
-                <a class="category is-current" href="./badge.html">Badge</a>
+                <a class="category" href="./badge.html">Badge</a>
                 <a class="category" href="./button.html">Button</a>
                 <a class="category" href="./card.html">Card</a>
-                <a class="category" href="#">Image</a>
+                <a class="category is-current" href="./image.html">Image</a>
                 <a class="category" href="./text_field.html">Input-Form</a>
                 <a class="category" href="./select.html">Select-Form</a>
                 <a class="category" href="#">Typography</a>
@@ -111,145 +111,63 @@
                 <section class="hero">
                     <div class="hero-body">
                         <h1 class="title">
-                            Badge
+                            Image
                         </h1>
                         <div class="subtitle is-4">
-                            <p>Small status UI elements</p>
+                            <p>Make your image to be responsive for any size.</p>
                         </div>
                     </div>
                 </section>
                 <div class="docs-body">
                     <div class="docs-content">
                         <div class="content">
-                            <p>Badges are small status descriptors for UI elements. A badge consists of a small circle,
-                                typically containing a number or other short set of characters, that appears in
-                                proximity to another object.</p>
+                            <p>Images will become responsive after adding <code>img</code> class to the HTML element.
+                                Try to resize the screen, and you will witness magic
+                            </p>
                         </div>
                         <div class="snippet">
                             <div class="snippet-example">
                                 <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-top is-right">4</span>
-                                    </span>
+                                    <img class="img" src="../images/dua_lipa.jpeg">
                                 </div>
                             </div>
                             <div class="snippet-source">
                                 <script
-                                    src="https://gist.github.com/ritik-patel05/a1a73b4be99f257946d215413e0c6127.js"></script>
+                                    src="https://gist.github.com/ritik-patel05/5193b618b8ae5adf1292e52170a058fd.js"></script>
                             </div>
                         </div>
-                        <h2 id="colors" class="title anchor-title">
-                            <span>Colors</span>
-                            <a href="#colors" class="anchor-link">#</a>
+                        <h2 id="types" class="title anchor-title">
+                            <span>Types</span>
+                            <a href="#types" class="anchor-link">#</a>
                         </h2>
-                        <div class="content">
-                            <p>It is available in 2 different colors.</p>
-                            <ul>
-                                <li>Primary</li>
-                                <li>Secondary</li>
-                            </ul>
-                        </div>
+                        <h3 class="subtitle">
+                            Rounded
+                        </h3>
                         <div class="snippet">
                             <div class="snippet-example">
                                 <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-top is-right">4</span>
-                                    </span>
+                                    <img class="img is-rounded" src="../images/dua_lipa.jpeg">
                                 </div>
                             </div>
                             <div class="snippet-source">
                                 <script
-                                    src="https://gist.github.com/ritik-patel05/a1a73b4be99f257946d215413e0c6127.js"></script>
+                                    src="https://gist.github.com/ritik-patel05/ddc92c061a2d132ea21049820c99ac0f.js"></script>
                             </div>
                         </div>
-
+                        <h3 class="subtitle">
+                            Corner
+                        </h3>
                         <div class="snippet">
                             <div class="snippet-example">
                                 <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-secondary is-top is-right">4</span>
-                                    </span>
+                                    <img class="img is-corner" src="../images/dua_lipa.jpeg">
                                 </div>
                             </div>
                             <div class="snippet-source">
                                 <script
-                                    src="https://gist.github.com/ritik-patel05/14d40d88886f3c8d49f4f2e3ceb9c844.js"></script>
+                                    src="https://gist.github.com/ritik-patel05/0ddd3d9789691456ece9de000f319dd2.js"></script>
                             </div>
                         </div>
-                        <h2 id="positions" class="title anchor-title">
-                            <span>Positions</span>
-                            <a href="#positions" class="anchor-link">#</a>
-                        </h2>
-                        <div class="content">
-                            <p>It can be placed in any corner of icon. The following modifiers can be used:</p>
-                            <ul>
-                                <li>Top right: <code>is-top is-right</code></li>
-                                <li>Bottom right: <code>is-bottom is-right</code></li>
-                                <li>Bottom left: <code>is-bottom is-left</code></li>
-                                <li>Top left: <code>is-top is-left</code></li>
-                            </ul>
-                        </div>
-                        <div class="snippet">
-                            <div class="snippet-example">
-                                <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-top is-right">4</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="snippet-source">
-                                <script
-                                    src="https://gist.github.com/ritik-patel05/a1a73b4be99f257946d215413e0c6127.js"></script>
-                            </div>
-                        </div>
-                        <div class="snippet">
-                            <div class="snippet-example">
-                                <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-bottom is-right">4</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="snippet-source">
-                                <script
-                                    src="https://gist.github.com/ritik-patel05/d374ecc3e72c6caee146afcc97b26e8d.js"></script>
-                            </div>
-                        </div>
-                        <div class="snippet">
-                            <div class="snippet-example">
-                                <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-bottom is-left">4</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="snippet-source">
-                                <script
-                                    src="https://gist.github.com/ritik-patel05/9bdb30e61102463e6a22d324dc8a9e96.js"></script>
-                            </div>
-                        </div>
-                        <div class="snippet">
-                            <div class="snippet-example">
-                                <div class="snippet-preview">
-                                    <span class="badge">
-                                        <i class="icon fas fa-envelope"></i>
-                                        <span class="is-text is-primary is-top is-left">4</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="snippet-source">
-                                <script
-                                    src="https://gist.github.com/ritik-patel05/347d6f9d6e1e7a2a1db8ae9f5ca9ec51.js"></script>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
