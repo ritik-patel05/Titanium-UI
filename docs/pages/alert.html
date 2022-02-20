@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Finding a component library for your next frontend project? Titanium-UI is the right choice for your need. Built in classes for components, typography, and many more.">
+    <title>Titanium-UI</title>
+
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/utilities/variables.css">
+    <link rel="stylesheet" href="../css/utilities/base.css">
+    <link rel="stylesheet" href="../css/pages/index.css">
+
+    <script async src="https://kit.fontawesome.com/fbe81f2487.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../images/titanium dark fontsa.png" width="112" height="28">
+            </a>
+
+            <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="../index.html" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="../pages/get_started.html" class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="../pages/get_started.html" class="btn is-primary">
+                            <strong>Get Started</strong>
+                        </a>
+                        <a href="https://github.com/ritik-patel05/Titanium-UI" class="btn is-secondary">
+                            <div class="nav icon">
+                                <i class="fab fa-github" title="Github"></i>
+                            </div>
+                            <span>Contribute</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="docsToggle" class="docs-toggle">
+        <button id="docsNavButton" class="btn is-primary is-light huge-button is-sm" id="docsNavButton">Show
+            menu</button>
+    </header>
+
+    <div id="docs" class="docs">
+        <div id="docsNavOverlay" class="docs-overlay"></div>
+
+        <nav id="docsNav" class="docs-nav">
+            <div class="categories">
+                <a class="category" href="#">Avatar</a>
+                <a class="category is-current" href="./alert.html">Alert</a>
+                <a class="category" href="#">Badge</a>
+                <a class="category" href="./button.html">Button</a>
+                <a class="category" href="./card.html">Card</a>
+                <a class="category" href="#">Image</a>
+                <a class="category" href="./text_field.html">Input-Form</a>
+                <a class="category" href="./select.html">Select-Form</a>
+                <a class="category" href="#">Typography</a>
+                <a class="category" href="#">Snackbar</a>
+                <a class="category" href="#">Navbar</a>
+            </div>
+        </nav>
+
+        <main class="docs-main">
+            <div class="container">
+                <section class="hero">
+                    <div class="hero-body">
+                        <h1 class="title">
+                            Alert
+                        </h1>
+                        <div class="subtitle is-4">
+                            <p>Display a short message to users.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="docs-body">
+                    <div class="docs-content">
+                        <div class="content">
+                            <p>An alert displays a short, important message in a way that attracts the user's attention
+                                without interrupting the user's task.</p>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success">This is success alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/6ab3048edbec301e0425cc0fc6b5e8b9.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="types" class="title anchor-title">
+                            <span>Types</span>
+                            <a href="#types" class="anchor-link">#</a>
+                        </h2>
+                        <div class="content">
+                            <p>It supports 2 types of alerts for displaying type of message. We can use these 2
+                                modifiers:</p>
+                            <ul>
+                                <li><code>is-success</code> for success alert</li>
+                                <li><code>is-danger</code> for danger alert</li>
+                            </ul>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-danger">This is danger alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/219854d34d14ade67dd638b93a398e76.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="sizes" class="title anchor-title">
+                            <span>Sizes</span>
+                            <a href="#sizes" class="anchor-link">#</a>
+                        </h2>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success is-sm">Small Alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/0a298abe608878b592b40728805e7d27.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success">Normal Alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/6ab3048edbec301e0425cc0fc6b5e8b9.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success is-md">Medium Alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/6bc39794ffc641a32846f344d4a216e1.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success is-lg">Large Alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/dd45490586f2ce72393b77089574fb9c.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="rounded" class="title anchor-title">
+                            <span>Rounded</span>
+                            <a href="#rounded" class="anchor-link">#</a>
+                        </h2>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success is-rounded">This is success alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/ca341f72c74ee19337eaac81e9520109.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="square" class="title anchor-title">
+                            <span>Square</span>
+                            <a href="#square" class="anchor-link">#</a>
+                        </h2>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <div class="alert is-success is-square">This is success alert!</div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/a9b3ad8d8e30b6956d1897b88b32e2e4.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p class="content"><strong>Made with ❤️ by Ritik</strong></p>
+        <div>
+            <a class="icon" href="https://twitter.com/ritik_patel05">
+                <i class="fab fa-twitter-square" title="Twitter"></i>
+            </a>
+            <a class="icon" href="https://github.com/ritik-patel05">
+                <i class="fab fa-github-square" title="Github"></i>
+            </a>
+            <a class="icon" href="https://www.linkedin.com/in/ritik-patel-5a61211a4/">
+                <i class="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

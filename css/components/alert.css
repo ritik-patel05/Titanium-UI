@@ -17,7 +17,7 @@
 }
 
 /* medium */
-.alert.is-med {
+.alert.is-md {
     font-size: var(--size-11);
     padding: var(--size-5) var(--size-10);
 }
