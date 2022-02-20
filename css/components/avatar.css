@@ -8,12 +8,12 @@
     flex-shrink: 0;
 
     /* Default avatar style */
-    width: var(--size-12);
-    height: var(--size-12);
-    font-size: var(--size-11);
+    width: 1.75em;
+    height: 1.75em;
+    font-size: 1.5em;
 
     border-radius: var(--radius-rounded);
-    padding: var(--size-4) var(--size-4);
+    padding: 0.5em;
 
     color: var(--white);
     background-color: var(--grey-dark);
@@ -23,29 +23,29 @@
 
 /* small */
 .avatar.is-sm {
-    width: var(--size-10);
-    height: var(--size-10);
-    font-size: var(--size-10);
+    font-size: 1em;
 }
 
 /* medium */
-.avatar.is-med {
-    width: var(--size-14);
-    height: var(--size-14);
-    font-size: var(--size-12);
+.avatar.is-md {
+    font-size: 2em;
 }
 
 /* large */
 .avatar.is-lg {
-    width: var(--size-16);
-    height: var(--size-16);
-    font-size: var(--size-13);
+    font-size: 2.75em;
 }
 
 /* ---- Image avatars ---- */
-.avatar.is-img {
+.avatar.is-img img {
     object-fit: cover;
     color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar.is-img {
+    padding: 0;
 }
 
 /* ---- Square avatars ---- */

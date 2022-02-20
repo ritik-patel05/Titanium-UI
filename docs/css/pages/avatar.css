@@ -1,0 +1,9 @@
+.avatars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatars * {
+    margin: 1rem;
+}
