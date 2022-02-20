@@ -44,3 +44,20 @@ const sideNavbarToggles = () => {
 }
 
 sideNavbarToggles();
+
+// Snackbar previews
+
+const snackbarPreviews = () => {
+	document.addEventListener('click', (event) => {
+		let id = event.target.dataset.id;
+		if (!id) return;
+
+		let elem = document.getElementById(id);
+		elem.style.display = 'flex';
+		setTimeout(() => {
+			elem.style.display = 'none';
+		}, 5000);
+	})
+}
+
+snackbarPreviews();

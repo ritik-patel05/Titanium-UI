@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Finding a component library for your next frontend project? Titanium-UI is the right choice for your need. Built in classes for components, typography, and many more.">
+    <title>Titanium-UI</title>
+
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../css/utilities/variables.css">
+    <link rel="stylesheet" href="../css/utilities/base.css">
+    <link rel="stylesheet" href="../css/pages/index.css">
+    <link rel="stylesheet" href="../css/pages/snackbar.css">
+
+
+    <script async src="https://kit.fontawesome.com/fbe81f2487.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../images/titanium dark fontsa.png" width="112" height="28">
+            </a>
+
+            <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="../index.html" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="../pages/get_started.html" class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="../pages/get_started.html" class="btn is-primary">
+                            <strong>Get Started</strong>
+                        </a>
+                        <a href="https://github.com/ritik-patel05/Titanium-UI" class="btn is-secondary">
+                            <div class="nav icon">
+                                <i class="fab fa-github" title="Github"></i>
+                            </div>
+                            <span>Contribute</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="docsToggle" class="docs-toggle">
+        <button id="docsNavButton" class="btn is-primary is-light huge-button is-sm" id="docsNavButton">Show
+            menu</button>
+    </header>
+
+    <div id="docs" class="docs">
+        <div id="docsNavOverlay" class="docs-overlay"></div>
+
+        <nav id="docsNav" class="docs-nav">
+            <div class="categories">
+                <a class="category" href="#">Avatar</a>
+                <a class="category" href="./alert.html">Alert</a>
+                <a class="category" href="#">Badge</a>
+                <a class="category" href="./button.html">Button</a>
+                <a class="category" href="./card.html">Card</a>
+                <a class="category" href="#">Image</a>
+                <a class="category" href="./text_field.html">Input-Form</a>
+                <a class="category" href="./select.html">Select-Form</a>
+                <a class="category" href="#">Typography</a>
+                <a class="category is-current" href="#">Snackbar</a>
+                <a class="category" href="#">Navbar</a>
+            </div>
+        </nav>
+
+        <main class="docs-main">
+            <div class="container">
+                <section class="hero">
+                    <div class="hero-body">
+                        <h1 class="title">
+                            Snackbar
+                        </h1>
+                        <div class="subtitle is-4">
+                            <p>Brief message to users</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="docs-body">
+                    <div class="docs-content">
+                        <div class="content">
+                            <p>Snackbars provide brief messages about app processes at the bottom of the screen. They
+                                appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user
+                                experience, and they don’t require user input to disappear.</p>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn" data-id="snackbar-1">Open Snackbar</button>
+                                    <div id="snackbar-1" class="snackbar">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey Information messageee</div>
+                                        <button class="btn is-sm is-right is-inverted is-secondary">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/6dbe406a48edbbceedc825efe899cf2e.js"></script>
+                            </div>
+                        </div>
+                        <h2 id="colors" class="title anchor-title">
+                            <span>Colors</span>
+                            <a href="#colors" class="anchor-link">#</a>
+                        </h2>
+                        <div class="content">
+                            <p>It is available in different colors.</p>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn" data-id="snackbar-2">Default Snackbar</button>
+                                    <div id="snackbar-2" class="snackbar">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey Information messageee</div>
+                                        <button class="btn is-sm is-right is-inverted is-secondary">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/6dbe406a48edbbceedc825efe899cf2e.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn is-danger" data-id="snackbar-3">Danger Snackbar</button>
+                                    <div id="snackbar-3" class="snackbar is-danger">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey Danger message</div>
+                                        <button class="btn is-sm is-right has-text-white">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/d5d4387a1c81defdfaf05a8888ea3ea7.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn is-success" data-id="snackbar-4">Success Snackbar</button>
+                                    <div id="snackbar-4" class="snackbar is-success">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey success message</div>
+                                        <button class="btn is-sm is-right has-text-white">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/f6e9d563d5b482ba86740502970053b3.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn is-primary" data-id="snackbar-5">Primary Snackbar</button>
+                                    <div id="snackbar-5" class="snackbar is-primary">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey primary message</div>
+                                        <button class="btn is-sm is-right has-text-white">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/915df7f6b4772a4d7646bab6cbf21283.js"></script>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <div class="snippet-example">
+                                <div class="snippet-preview">
+                                    <button class="btn is-secondary" data-id="snackbar-6">Secondary Snackbar</button>
+                                    <div id="snackbar-6" class="snackbar is-secondary">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <div class="is-msg">Hey secondary message</div>
+                                        <button class="btn is-sm is-right has-text-white">
+                                            Retry
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snippet-source">
+                                <script
+                                    src="https://gist.github.com/ritik-patel05/78fad896d3d804824d95bd781968d22e.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p class="content"><strong>Made with ❤️ by Ritik</strong></p>
+        <div>
+            <a class="icon" href="https://twitter.com/ritik_patel05">
+                <i class="fab fa-twitter-square" title="Twitter"></i>
+            </a>
+            <a class="icon" href="https://github.com/ritik-patel05">
+                <i class="fab fa-github-square" title="Github"></i>
+            </a>
+            <a class="icon" href="https://www.linkedin.com/in/ritik-patel-5a61211a4/">
+                <i class="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
