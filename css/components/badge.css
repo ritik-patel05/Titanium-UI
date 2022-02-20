@@ -25,6 +25,10 @@
     padding: var(--size-0) var(--size-4);
 }
 
+.badge .icon {
+    font-size: var(--size-11);
+}
+
 /* ---- Colors ---- */
 
 .badge .is-primary {
@@ -59,24 +63,3 @@
     transform: scale(1) translate(-50%, 50%);
     transform-origin: 0% 100%;
 }
-
-/* ---- Size of Badge based on size of Icon ---- */
-.icon.is-sm ~ .is-text {
-    font-size: var(--size-6);
-    height: var(--size-9);
-    min-width: var(--size-9);
-}
-
-.icon.is-md ~ .is-text {
-    font-size: var(--size-8);
-    height: var(--size-11);
-    min-width: var(--size-11);
-}
-
-.icon.is-lg ~ .is-text {
-    font-size: var(--size-9);
-    height: var(--size-12);
-    min-width: var(--size-12);
-}
-
-
