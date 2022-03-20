@@ -85,7 +85,6 @@
 .have-icon-left .icon, 
 .have-icon-right .icon {
     position: absolute;
-    top: 0;
 
     color: var(--white-light);
 
